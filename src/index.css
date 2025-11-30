@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+
+a {
+  color: #ffff;
+}
+
+li {
+  margin-right: 5rem;
+}
+
+ul {
+  margin-right: 10rem;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.linha {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleY(0.2);
+  width: 90%;
+  height: 1px;
+  background: #ffffff;
+  transform-origin: top;
+}
+
+/* Scrollbar moderna */
+.custom-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Remove as setinhas */
+.custom-scroll::-webkit-scrollbar-button {
+  display: none;
+}

@@ -1,0 +1,107 @@
+import Header from "./header";
+import ComputerDev from "../assets/notebook3d-Photoroom 1.png.png";
+import Linkedin from "../assets/LinkedIn.png";
+import Github from "../assets/GitHub.png";
+import { motion } from "framer-motion";
+import Typing from "./typing";
+
+export default function Apresentation() {
+  return (
+    <div className="bg-[#0A001B] h-screen max-md:h-auto max-md:pb-10">
+      <Header />
+
+      <div
+        className="
+        pt-35
+          text-white flex justify-center items-center gap-16
+          max-lg:gap-10 max-md:flex-col
+          max-md:text-center max-md:px-4 
+        "
+      >
+      
+        <div
+          className="
+            w-[690px]
+            max-lg:w-[500px]
+            max-md:w-full max-md:flex max-md:flex-col max-md:items-center
+          "
+        >
+          <div className="max-md:w-[90%]">
+            <Typing text="Bem-vindo ao meu portifólio..." speed={60} />
+
+            <motion.p
+              className="mt-4 md:text-[17px] max-md:text-[15px]"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.6 }}
+            >
+              Olá! Meu nome é Gabriel, tenho 21 anos e sou desenvolvedor web com
+              foco em desenvolvimento fullstack e criação de interfaces modernas.
+              <br />
+              Atualmente curso Análise e Desenvolvimento de Sistemas pela PUCPR e
+              venho construindo projetos completos que unem boa performance,
+              organização e uma ótima experiência de usuário.
+            </motion.p>
+          </div>
+
+      
+          <div
+            className="
+              flex gap-10 mt-10
+              max-md:justify-center max-md:gap-6
+            "
+          >
+            <motion.a
+              href="https://www.linkedin.com/in/gabriel-da-silva-freitas-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{
+                scale: 1.1,
+                boxShadow: "0 0 20px 4px rgba(59,130,246,0.6)",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="
+                w-[65px] h-[65px] bg-[#0A001B] border border-white cursor-pointer
+                flex items-center justify-center hover:border-blue-400
+                max-md:w-[55px] max-md:h-[55px]
+              "
+            >
+              <img src={Linkedin} alt="LinkedIn" className="max-md:w-[28px]" />
+            </motion.a>
+
+            <motion.a
+              href="https://github.com/usergabrielmga?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{
+                scale: 1.1,
+                boxShadow: "0 0 20px 4px rgba(138,43,226,0.6)",
+              }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="
+                w-[65px] h-[65px] bg-[#0A001B] border border-white cursor-pointer
+                flex items-center justify-center hover:border-purple-400
+                max-md:w-[55px] max-md:h-[55px]
+              "
+            >
+              <img src={Github} alt="GitHub" className="max-md:w-[28px]" />
+            </motion.a>
+          </div>
+        </div>
+
+       
+        <motion.div
+          className="
+            w-[470px]
+            max-lg:w-[450px] max-md:w-[280px] max-md:mt-10
+            max-md:flex max-md:justify-center
+          "
+          animate={{ y: [0, -20, 0] }}
+          transition={{ duration: 3, repeat: Infinity }}
+        >
+          <img src={ComputerDev} alt="Notebook" />
+        </motion.div>
+      </div>
+    </div>
+  );
+}
