@@ -35,7 +35,7 @@ export default function Apresentation() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.6 }}
             >
-              Olá! Meu nome é Gabriel, tenho 21 anos e sou desenvolvedor web com
+              Olá! Meu nome é Gabriel da Silva Freitas, tenho 21 anos e sou desenvolvedor web com
               foco em desenvolvimento fullstack e criação de interfaces modernas.
               <br />
               Atualmente curso Análise e Desenvolvimento de Sistemas pela PUCPR e
