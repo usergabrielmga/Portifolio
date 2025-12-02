@@ -2,21 +2,21 @@ import { motion } from "framer-motion";
 
 export default function Skills() {
     return (
-        <div className="bg-[#0D031F] md:h-screen h-[1200px] relative">
+        <div className="bg-[#0D031F] lg:h-screen md:h-[1000px] sm:h-[1110] h-[1220px] relative">
 
            
             <motion.h2
-                className="absolute left-1/2 -translate-x-1/2 pt-5 md:pt-40 text-white text-[25px] font-bold"
+                className="absolute left-1/2 -translate-x-1/2  lg:pt-40 md:pt-20 sm:pt-10  pt-5 text-white md:text-[25px] text-[18px] font-bold"
                 initial={{ opacity: 0, y: -40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true, amount: 0.3 }}
             >
-                Habilidades
+                Minhas Experiências
             </motion.h2>
 
            
-            <div className="border-1 border-sky-50 flex-row justify-between w-[90%] text-white p-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:flex md:w-[1100px]">
+            <div className="border-1 border-sky-50 flex-row justify-between w-[90%] text-white p-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:flex lg:w-[1100px] md:w-[880px]">   
 
                
                 <motion.div

@@ -21,7 +21,7 @@ export default function Typing({ text, speed = 60 }: TypingProps) {
   }, [text, speed]);
 
   return (
-    <h1 className="md:text-[30px] text-[22px] font-bold flex md:justify-start justify-center">
+    <h1 className="lg:text-[30px] md:text-[20px] sm:text-[20px] font-bold flex md:justify-start justify-center">
       {displayed}
 
       {/* cursor piscando */}

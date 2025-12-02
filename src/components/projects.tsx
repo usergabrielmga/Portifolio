@@ -93,7 +93,7 @@ O fluxo geral envolve autenticação, gerenciamento de carros e exibição dinâ
     }
     
    return (
-    <div className="bg-[#0A001B] md:h-screen h-[1110px] text-white relative">
+    <div className="bg-[#0A001B] md:h-screen sm:h-[600px] text-white relative">
 
         <motion.div
             className="

@@ -22,7 +22,8 @@ export default function Apresentation() {
         <div
           className="
             w-[690px]
-            max-lg:w-[500px]
+            max-xl:w-[500px]
+            max-lg:w-[430px]
             max-md:w-full max-md:flex max-md:flex-col max-md:items-center
           "
         >
@@ -30,7 +31,7 @@ export default function Apresentation() {
             <Typing text="Bem-vindo ao meu portifólio..." speed={60} />
 
             <motion.p
-              className="mt-4 md:text-[17px] max-md:text-[15px]"
+              className="mt-4 lg:text-[17px] md:text-[16px] max-md:text-[15px]"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.6 }}
@@ -63,7 +64,7 @@ export default function Apresentation() {
               className="
                 w-[65px] h-[65px] bg-[#0A001B] border border-white cursor-pointer
                 flex items-center justify-center hover:border-blue-400
-                max-md:w-[55px] max-md:h-[55px]
+                max-lg:w-[55px] max-lg:h-[55px]
               "
             >
               <img src={Linkedin} alt="LinkedIn" className="max-md:w-[28px]" />
@@ -81,7 +82,7 @@ export default function Apresentation() {
               className="
                 w-[65px] h-[65px] bg-[#0A001B] border border-white cursor-pointer
                 flex items-center justify-center hover:border-purple-400
-                max-md:w-[55px] max-md:h-[55px]
+                max-lg:w-[55px] max-lg:h-[55px]
               "
             >
               <img src={Github} alt="GitHub" className="max-md:w-[28px]" />
@@ -93,7 +94,7 @@ export default function Apresentation() {
         <motion.div
           className="
             w-[470px]
-            max-lg:w-[450px] max-md:w-[280px] max-md:mt-10
+            max-xl:w-[450px] max-lg:w-[280px] max-md:mt-10
             max-md:flex max-md:justify-center
           "
           animate={{ y: [0, -20, 0] }}
