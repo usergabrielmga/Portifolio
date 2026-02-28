@@ -4,7 +4,7 @@ import { FiX } from "react-icons/fi"
 export default function Header() {
 
     const sections = ["inicio", "sobre", "projetos", "contato"];
-    const [active, setActive] = useState("inicio");
+    
     const [open, setOpen] = useState(false);
 
     const handleScroll = (id: string) => {
@@ -12,29 +12,12 @@ export default function Header() {
             behavior: "smooth",
             block: "start"
         });
-        setActive(id);
+        
         setOpen(false); 
     };
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        setActive(entry.target.id);
-                    }
-                });
-            },
-            { threshold: 0.6 }
-        );
-
-        sections.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) observer.observe(el);
-        });
-
-        return () => observer.disconnect();
-    }, []);
+   
+     
 
     return (
         <header className="fixed top-0 left-0 w-full h-20 flex items-center bg-[#0A001B] z-50">
