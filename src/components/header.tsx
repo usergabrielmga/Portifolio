@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import { FiX } from "react-icons/fi"
 
 export default function Header() {
 
     const sections = ["inicio", "sobre", "projetos", "contato"];
     const [active, setActive] = useState("inicio");
-    const [open, setOpen] = useState(false); // menu mobile
+    const [open, setOpen] = useState(false);
 
     const handleScroll = (id: string) => {
         document.getElementById(id)?.scrollIntoView({
@@ -12,7 +13,7 @@ export default function Header() {
             block: "start"
         });
         setActive(id);
-        setOpen(false); // fecha menu mobile ao clicar
+        setOpen(false); 
     };
 
     useEffect(() => {
@@ -36,30 +37,41 @@ export default function Header() {
     }, []);
 
     return (
-        <header className="fixed top-0 left-0 w-full h-20 flex items-center px-6 bg-[#0A001B] z-50">
+        <header className="fixed top-0 left-0 w-full h-20 flex items-center bg-[#0A001B] z-50">
   
             <ul className="
-                hidden md:flex ml-auto gap-10 text-white text-[18px]
+                absolute
+                right-30
+                hidden md:flex
+                justify-center
+                items-center
+                text-white
+                text-[18px]
+                border-1 border-sky-50
+                rounded-
             ">
-                {sections.map((item) => (
-                    <li key={item} className="relative cursor-pointer">
-                        <a onClick={() => handleScroll(item)}>
-                            {item.charAt(0).toUpperCase() + item.slice(1)}
-                        </a>
+                {sections.map((item, index) => (
+  <li
+    key={item}
+    className="relative cursor-pointer block text-center px-9 py-2"
+  >
+    {index !== 0 && (
+      <span className="absolute left-0 top-1/2 -translate-y-1/2 h-4 w-[1px] bg-white"></span>
+    )}
 
-                        {active === item && (
-                            <span className="absolute left-0 -bottom-1 w-4 h-[2px] bg-white rounded-full"></span>
-                        )}
-                    </li>
-                ))}
+    <a onClick={() => handleScroll(item)}>
+      {item.charAt(0).toUpperCase() + item.slice(1)}
+    </a>
+  </li>
+))}
             </ul>
 
         
             <button
-                className="md:hidden ml-auto text-white text-3xl"
+                className="md:hidden ml-auto text-white text-3xl cursor-pointer"
                 onClick={() => setOpen(!open)}
             >
-                {open ? "✖" : "☰"}
+                {open ? <FiX className="w-6 h-6" /> : "☰"}
             </button>
 
            

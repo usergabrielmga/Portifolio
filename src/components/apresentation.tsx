@@ -12,10 +12,11 @@ export default function Apresentation() {
 
       <div
         className="
-        pt-35
+        pt-55
           text-white flex justify-center items-center gap-16
           max-lg:gap-10 max-md:flex-col
           max-md:text-center max-md:px-4 
+          max-md:pt-20
         "
       >
       
@@ -87,6 +88,50 @@ export default function Apresentation() {
             >
               <img src={Github} alt="GitHub" className="max-md:w-[28px]" />
             </motion.a>
+
+            <motion.a
+  href="#"
+  target="_blank"
+  rel="noopener noreferrer"
+  whileHover={{
+    scale: 1.07,
+    boxShadow: "0 0 25px rgba(168,85,247,0.7)",
+  }}
+  whileTap={{ scale: 0.97 }}
+  transition={{ type: "spring", stiffness: 300 }}
+  className="
+    group relative
+    w-[220px] h-[60px]
+    bg-gradient-to-r from-[#4648CF] to-violet-600
+    rounded-xl
+    flex items-center justify-center
+    font-semibold tracking-wide
+    text-white
+    transition-all duration-300
+    overflow-hidden
+
+    max-md:w-[55px] max-md:h-[55px]
+  "
+>
+  {/* TEXTO - some no mobile */}
+  <span className="relative z-10 max-md:hidden">
+    Baixar currículo
+  </span>
+
+  {/* ÍCONE - aparece só no mobile */}
+  <span className="hidden max-md:block relative z-10">
+    📄
+  </span>
+
+  <span
+    className="
+      absolute inset-0
+      bg-white opacity-0
+      group-hover:opacity-10
+      transition-opacity duration-300
+    "
+  />
+</motion.a>
           </div>
         </div>
 

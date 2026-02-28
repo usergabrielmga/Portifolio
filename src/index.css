@@ -1,17 +1,6 @@
 @import "tailwindcss";
 
 
-a {
-  color: #ffff;
-}
-
-li {
-  margin-right: 5rem;
-}
-
-ul {
-  margin-right: 10rem;
-}
 
 h3 {
   font-size: 18px;

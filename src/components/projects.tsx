@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import PixelEcho from "../assets/pixelEcho.png";
 import BookVerse from  '../assets/bookVerse.png'
 import GestecEngenharia from '../assets/gestecEngenharia.png'
-import EliteMotors from '../assets/eliteMotors.png'
+import PrecifyGo from '../assets/precifyGo.png'
 import { useState } from "react";
 import ProjectModal from "./modalProject";
 
@@ -28,61 +28,81 @@ export default function Projects() {
 
                         Autenticação de Usuários
                         A aplicação conta com cadastro e login utilizando autenticação via token JWT. Somente usuários autenticados podem criar, editar ou excluir categorias e fotos. Todas as rotas sensíveis do backend são protegidas para garantir que apenas usuários autorizados realizem alterações.`,
-            link: 'https://github.com/usergabrielmga/PixelEcho'
+            link: 'https://github.com/usergabrielmga/PixelEcho',
+            technologies: {
+                frontend: ["react", "typescript", "tailwind", "css", "html", "javascript"],
+                backend: ["node", "express", "mysql", "cloudinary"]
+            }
+        },
+        { 
+            image: PrecifyGo,
+            description: `Descrição
+
+            O Gerador de Orçamentos é uma aplicação web desenvolvida para criar, gerenciar e compartilhar orçamentos de forma prática e profissional. O sistema permite cadastrar clientes, gerar orçamentos com valores e prazos definidos, acompanhar o status das propostas e compartilhar orçamentos através de links públicos. A plataforma foi projetada para atender profissionais e pequenas empresas que desejam organizar propostas comerciais e agilizar o processo de aprovação com seus clientes.
+
+            Tecnologias Utilizadas
+
+            No front-end, a aplicação foi desenvolvida com React.js e TypeScript, utilizando React Router para navegação entre páginas, Axios para comunicação com a API e Tailwind CSS para estilização e construção de uma interface moderna e responsiva.
+
+            No back-end, o sistema consome uma API própria responsável pelo gerenciamento dos dados de clientes e orçamentos. A autenticação é baseada em tokens armazenados no navegador, garantindo segurança no acesso às áreas protegidas do sistema.
+
+            Funcionalidades
+
+            O sistema permite criar novos orçamentos informando cliente, valores, datas e validade da proposta. Os orçamentos são exibidos em um painel organizado com visualização em cards, permitindo acompanhar rapidamente o status de cada proposta como Pendente, Aprovado ou Rejeitado.
+
+            É possível filtrar orçamentos por status, visualizar detalhes, gerenciar clientes e compartilhar propostas por meio de um link público exclusivo, facilitando o envio e a aprovação pelo cliente.
+
+            A interface foi projetada no formato dashboard, proporcionando navegação intuitiva, atualização dinâmica dos dados e uma experiência fluida sem recarregamento de página.
+
+            Autenticação de Usuários
+
+            A aplicação possui sistema de login com autenticação baseada em token, garantindo que apenas usuários autenticados possam acessar o painel administrativo. Rotas protegidas impedem acesso não autorizado às funcionalidades internas, enquanto o logout remove a sessão ativa, assegurando a proteção dos dados.`,
+            link: 'https://github.com/usergabrielmga/PrecifyGo',
+            technologies: {
+                frontend: ["react", "typescript", "tailwind", "css", "html", "javascript"],
+                backend: ["node", "mysql", "cloudinary"]
+            }
         },
         { 
             image: BookVerse,
             description: `Introdução
-Este projeto é um site desenvolvido em React com TypeScript, criado para exibir descrições de livros de forma organizada e acessível. Ele conta com um design moderno e oferece a possibilidade de salvar livros para consulta futura.
+                Este projeto é um site desenvolvido em React com TypeScript, criado para exibir descrições de livros de forma organizada e acessível. Ele conta com um design moderno e oferece a possibilidade de salvar livros para consulta futura.
 
-Tecnologias Utilizadas
-A aplicação utiliza React e TypeScript na construção da interface, Styled Components para estilização, React Router para navegação entre páginas. Caso haja integração com serviços externos, Axios ou Fetch API podem ser usados para realizar requisições.
+                Tecnologias Utilizadas
+                A aplicação utiliza React e TypeScript na construção da interface, Styled Components para estilização, React Router para navegação entre páginas. Caso haja integração com serviços externos, Axios ou Fetch API podem ser usados para realizar requisições.
 
-Funcionalidades
-O site exibe uma lista de livros com descrições completas, incluindo título, autor, gênero e resumo. Sua interface é moderna, responsiva e conta com animações suaves. Também é possível salvar livros em uma lista de favoritos, garantindo persistência dos dados através de Local Storage ou Firebase.
+                Funcionalidades
+                O site exibe uma lista de livros com descrições completas, incluindo título, autor, gênero e resumo. Sua interface é moderna, responsiva e conta com animações suaves. Também é possível salvar livros em uma lista de favoritos, garantindo persistência dos dados através de Local Storage ou Firebase.
 
-Estrutura do Projeto
-A organização inclui pastas dedicadas a componentes reutilizáveis, páginas do site, serviços para chamadas de API, estilização global e funções auxiliares. Os arquivos App.tsx e main.tsx são responsáveis pelo componente principal e pelo ponto de entrada da aplicação.
+                Estrutura do Projeto
+                A organização inclui pastas dedicadas a componentes reutilizáveis, páginas do site, serviços para chamadas de API, estilização global e funções auxiliares. Os arquivos App.tsx e main.tsx são responsáveis pelo componente principal e pelo ponto de entrada da aplicação.
 
-`
+                `
  ,
-             link: 'https://github.com/usergabrielmga/BookVerse'
+             link: 'https://github.com/usergabrielmga/BookVerse',
+             technologies: {
+                frontend: ["react", "typescript", "css", "html", "javascript"],
+            }
         },
         { 
             image: GestecEngenharia,
             description: `Este projeto é um site desenvolvido utilizando HTML e CSS, criado para apresentar de forma clara e profissional os serviços da Gestec Engenharia, uma empresa que atua no ramo de asfaltos e pavimentação. O site foi pensado para transmitir credibilidade, facilitar o contato com clientes e destacar os serviços prestados no setor.
 
-Tecnologias Utilizadas
+                Tecnologias Utilizadas
 
-A aplicação foi construída com HTML5 para a estruturação das páginas e CSS3 para estilização, garantindo um visual moderno e responsivo. Também foi utilizada uma biblioteca de slider para criar seções dinâmicas, como banners e áreas de destaque, oferecendo uma navegação mais fluida e impactante.
+                A aplicação foi construída com HTML5 para a estruturação das páginas e CSS3 para estilização, garantindo um visual moderno e responsivo. Também foi utilizada uma biblioteca de slider para criar seções dinâmicas, como banners e áreas de destaque, oferecendo uma navegação mais fluida e impactante.
 
-Funcionalidades
+                Funcionalidades
 
-O site apresenta informações detalhadas sobre os serviços de asfaltamento, incluindo descrição das áreas de atuação, galeria visual, contatos e informações institucionais. Ele possui um layout limpo, profissional e adequado ao público do setor. As seções em slider permitem destacar conteúdos importantes, como obras realizadas, serviços principais e diferenciais da empresa.
+                O site apresenta informações detalhadas sobre os serviços de asfaltamento, incluindo descrição das áreas de atuação, galeria visual, contatos e informações institucionais. Ele possui um layout limpo, profissional e adequado ao público do setor. As seções em slider permitem destacar conteúdos importantes, como obras realizadas, serviços principais e diferenciais da empresa.
 
-Estrutura do Projeto
+                Estrutura do Projeto
 
-A organização segue uma estrutura simples e eficiente, com páginas separadas para cada área do site, folhas de estilo dedicadas e arquivos responsáveis pelos sliders e elementos interativos. A divisão clara entre HTML, CSS e scripts garante manutenção facilitada e uma boa escalabilidade para futuras melhorias.`,
-            link: null
-        },
-        { 
-            image: EliteMotors,
-            description: `Este projeto é um sistema desenvolvido em PHP, criado para gerenciar e exibir veículos de forma organizada, profissional e moderna. O Elite Motors foi projetado para facilitar o cadastro de carros pela administração e oferecer ao cliente final uma visualização clara e atraente dos veículos disponíveis.
-
-Tecnologias Utilizadas
-
-A aplicação foi construída utilizando PHP para o back-end, MySQL como banco de dados e SQL para criação e manipulação das tabelas. O front-end utiliza HTML e CSS para estruturar e estilizar as páginas. Além disso, o sistema possui um painel de login administrativo, permitindo acesso seguro às funcionalidades internas.
-
-Funcionalidades
-
-O sistema conta com um CRUD completo para gerenciamento dos veículos: cadastrar, listar, editar e excluir. Cada carro cadastrado no painel administrativo é exibido automaticamente no grid de visualização acessado pelos clientes, incluindo informações como modelo, ano, preço e detalhes relevantes.
-A interface é responsiva, moderna e focada na experiência do usuário, garantindo navegação fácil tanto para o administrador quanto para o cliente final.
-
-Estrutura do Projeto
-
-A organização do sistema inclui arquivos PHP separados para lógica de negócio, páginas dedicadas ao painel administrativo, formulários de cadastro, rotas de CRUD e páginas de exibição dos veículos. O banco de dados MySQL contém as tabelas estruturadas para armazenar as informações de forma segura e eficiente.
-O fluxo geral envolve autenticação, gerenciamento de carros e exibição dinâmica dos dados cadastrados, mantendo uma arquitetura clara e escalável.`,
-            link: 'https://github.com/usergabrielmga/EliteMotors'
+                A organização segue uma estrutura simples e eficiente, com páginas separadas para cada área do site, folhas de estilo dedicadas e arquivos responsáveis pelos sliders e elementos interativos. A divisão clara entre HTML, CSS e scripts garante manutenção facilitada e uma boa escalabilidade para futuras melhorias.`,
+            link: null,
+            technologies: {
+                frontend: ["react", "css", "html", "javascript"],
+            }
         },
         
     ];
