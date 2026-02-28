@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Github from '../assets/GitHub.png'
-import LinkExternal from '../assets/External Link.png'
+import Github from '../assets/github.png'
+import LinkExternal from '../assets/externallink.png'
 import {
   SiReact,
   SiJavascript,
