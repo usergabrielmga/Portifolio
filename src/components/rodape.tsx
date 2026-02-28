@@ -1,5 +1,5 @@
-import Linkedin from '../assets/LinkedIn.png'
-import Github from '../assets/GitHub.png'
+import Linkedin from '../assets/linkedin.png'
+import Github from '../assets/github.png'
 
 export default function Rodape() {
     return(
