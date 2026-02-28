@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import PixelEcho from "../assets/pixelEcho.png";
-import BookVerse from  '../assets/bookVerse.png'
-import GestecEngenharia from '../assets/gestecEngenharia.png'
-import PrecifyGo from '../assets/precifyGo.png'
+import PixelEcho from "../assets/pixelecho.png";
+import BookVerse from  '../assets/bookverse.png'
+import GestecEngenharia from '../assets/gestecengenharia.png'
+import PrecifyGo from '../assets/precifygo.png'
 import { useState } from "react";
 import ProjectModal from "./modalProject";
 

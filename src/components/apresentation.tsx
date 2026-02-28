@@ -1,7 +1,7 @@
 import Header from "./header";
-import ComputerDev from "../assets/notebook3d-Photoroom 1.png.png";
-import Linkedin from "../assets/LinkedIn.png";
-import Github from "../assets/GitHub.png";
+import ComputerDev from "../assets/notebook.png";
+import Linkedin from "../assets/linkedin.png";
+import Github from "../assets/github.png";
 import { motion } from "framer-motion";
 import Typing from "./typing";
 
