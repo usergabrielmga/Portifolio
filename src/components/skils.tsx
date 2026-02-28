@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 
 export default function Skills() {
     return (
-        <div className="bg-[#0D031F] lg:h-screen md:h-[1000px] sm:h-[1110] h-[1220px] relative">
+        <div className="bg-[#0D031F] lg:h-screen md:h-[1000px] sm:h-[1110] h-[1290px] relative">
 
            
             <motion.h2
-                className="absolute left-1/2 -translate-x-1/2  lg:pt-40 md:pt-20 sm:pt-10  pt-5 text-white md:text-[25px] text-[18px] font-bold"
+                className="text-center  lg:pt-40 md:pt-20 sm:pt-10  pt-10 text-white md:text-[25px] text-[18px] font-bold"
                 initial={{ opacity: 0, y: -40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -73,7 +73,7 @@ export default function Skills() {
                 </motion.div>
             </div>
 
-            
+           
         </div>
     );
 }

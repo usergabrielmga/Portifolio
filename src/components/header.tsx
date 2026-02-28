@@ -51,7 +51,7 @@ export default function Header() {
 
         
             <button
-                className="md:hidden ml-auto text-white text-3xl cursor-pointer"
+                className="md:hidden absolute right-4 top-1/2 -translate-y-1/2 text-white text-3xl cursor-pointer"
                 onClick={() => setOpen(!open)}
             >
                 {open ? <FiX className="w-6 h-6" /> : "☰"}
